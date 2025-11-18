@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin: 10px; 
+    animation: exibir 5s linear forwards;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-text-stroke: 0.5px red;
+}
+
+.p1_twenty{
+    margin: 10px;
+    accent-color: rgb(135, 3, 3);
+}
+
+#rsp_p1_a,#rsp_p1_b{
+    display: none;
+}
+
+#rsp_p1_a.exibir,#rsp_p1_b.exibir{
+    animation: exibir 1.5s linear forwards;
+    display: flex;
+    background-color: rgb(126, 13, 13);
+    padding: 5px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+@keyframes exibir {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.foto_twenty{
+    width: 150px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+hr{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.foto_twenty:hover{
+    width: 300px;
+    border: 2px solid rgb(105, 10, 10);
+}
+
+#tyler{
+    border: 1px solid white;
+    margin-top: 70px;
+    margin-right: 110px;
+    transition: 0.3s ease;
+    float: right;
+}
+
+#tyler:hover{
+    transform: scale(1.05);
+    border: 2px solid rgb(105, 10, 10);
+    box-shadow: 0 0 10px 0 white;
+}
+
+#origem{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    text-align: justify;
+    width: 900px;
+    -webkit-text-stroke: 0.2px red;
+}
+
+.continuacao{
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 40px;
+    width: 900px;
+    -webkit-text-stroke: 0.2px red;
+}
+
+#torch{
+    border: 1px solid white;
+    margin-top: 180px;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    float: left;
+}
+
+#torch:hover{
+    transform: scale(1.05);
+    border: 2px solid rgb(105, 10, 10);
+    box-shadow: 0 0 10px 0 white;
+}
+
+#origem2{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 175px;
+    margin-bottom: 10px;
+    margin-left: 550px;
+    text-align: justify;
+    width: 900px;
+    -webkit-text-stroke: 0.2px red; 
+}
+
+.continuacao2{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 550px;
+    text-align: justify;
+    width: 900px;
+    -webkit-text-stroke: 0.2px red;
+}
+
+#atualmente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    -webkit-text-stroke: 0.2px red;
+}
+
+#fim{
+    text-align: justify;
+    -webkit-text-stroke: 0.2px red;
+    margin: 10px;
+}
+
+footer{
+    margin: 100px;
+    text-align: center;
+    -webkit-text-stroke: 0.2px red;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(black,black,rgb(72, 4, 4));
+    border: 1px solid white;
+    color: white;
+    font-size: 15px;
+}
+
+#albuns{
+    margin-top: 75px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#albuns:hover{
+    color: red;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 white;
+}
+
+@keyframes surgir{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal_twenty{
+    display: none;
+    background-color: black;
+    padding: 50px;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 2px solid white;
+}
+
+.modal_twenty.abrir{
+    display: flex;
+    flex-direction: column;
+}
+
+audio::-webkit-media-controls-enclosure{
+    background-color: rgb(26, 24, 24);   
+    border: 2px solid rgb(68, 13, 13);
+}
+
+.doubt{
+    transition: linear;
+}
+
+.doubt:hover{
+    animation: batida 0.5s linear infinite;
+    box-shadow: 0 0 10px 0 rgb(89, 8, 8);
+}
+
+@keyframes batida{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
