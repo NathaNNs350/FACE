@@ -52,7 +52,7 @@ footer{
     font-style: italic;
 }
 
-@media screen and (max-width: 1080px;{
+@media screen and (max-width: 1080px;){
     button{
         font-size: 13px;
     }
