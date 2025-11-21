@@ -51,3 +51,9 @@ footer{
     color: #c3b3d8;
     font-style: italic;
 }
+
+@media screen and (max-width: 1080px;{
+    button{
+        font-size: 13px;
+    }
+}
