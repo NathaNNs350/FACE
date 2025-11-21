@@ -1,7 +1,7 @@
 body{
     background-color: #6c45a0;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Arial Black', Gadget, sans-serif;
     text-align: center;
     justify-content: center;
@@ -9,7 +9,7 @@ body{
 button{
     background-color: #7648b3;
     color: #FFFFFF;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
