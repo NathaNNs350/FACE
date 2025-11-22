@@ -34,6 +34,11 @@ header{
     justify-content: center;
     gap: 18px;
 }
+.Bmenu{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 footer{
     background-color: #4b2e70;
     padding: 10px;
@@ -51,9 +56,52 @@ footer{
     color: #c3b3d8;
     font-style: italic;
 }
-
-@media screen and (max-width: 1080px;){
+/* Celulares maiores e tablets comuns */
+@media screen and (max-width: 1080px){
     button{
         font-size: 13px;
+    }
+}
+
+/* Celulares e telas pequenas */
+@media screen and (max-width: 768px){
+    header{
+        padding: 15px 8px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    footer{
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+    body{
+        font-size: 14px;
+    }
+    button{
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Celulares muito pequenos */
+@media screen and (max-width: 480px){
+    header{
+        padding: 12px 5px;
+        gap: 8px;
+    }
+    footer{
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+    body{
+        font-size: 13px;
+    }
+    button{
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    #qea{
+        padding: 10px;
+        margin-top: 15px;
     }
 }

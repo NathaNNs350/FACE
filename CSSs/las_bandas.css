@@ -27,8 +27,8 @@
 }
 .bImg{
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     opacity: 0;
     transition: 0.6s ease;
@@ -41,8 +41,9 @@
 }
 .bLogo{
     position: relative;
-    width: 550px;
-    height: 550px;
+    left: 2em;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     margin-right: 10px;
     transition: 0.6s ease;
@@ -74,26 +75,27 @@
     font-family: 'Almendra SC', serif;
 }
 #twenty .bLogo{
-    left: 0px;
+    left: -16%;
     bottom: -65px;
     height: 210px;
     width: auto;
 }
 #twenty .bText{
+    width: 85%;
     bottom: 60px;
-    left: 0px;
+    left: -14%;
     font-size: 16px;
 }
 #twenty #pilot1{
     left: -59px;
     bottom: -9px;
-    height: 300px;
+    height: 210px;
     width: auto;
 }
 #twenty #pilot2{
-    right: -50px;
+    right: 85px;
     bottom: -9px;
-    height: 300px;
+    height: 210px;
     width: auto;
 }
 #twenty:hover{
@@ -109,6 +111,7 @@
     transition: 0.6s ease;
 }
 #twenty:hover .bLogo{
+    left: -19%;
     bottom: 5px;
     transform: scale(0.40);
     transition: 0.6s ease;
