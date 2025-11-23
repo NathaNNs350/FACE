@@ -26,6 +26,9 @@ button:active{
     transform: scale(0.95);
 }
 header{
+    position: relative;
+    top: -8px;
+    width: 96vw;
     background-color: #4b2e70;
     border-radius: 0 0 10px 10px;
     padding: 10px;
@@ -40,9 +43,13 @@ header{
     gap: 10px;
 }
 footer{
+    position: sticky;
+    width: 96vw;
+    bottom: -2vh;
     background-color: #4b2e70;
     padding: 10px;
     margin-top: 20px;
+    margin-bottom: -10px;
     border-radius: 10px 10px 0 0;
 }
 #qea{
@@ -88,10 +95,12 @@ footer{
     header{
         padding: 12px 5px;
         gap: 8px;
+        width: 93vw;
     }
     footer{
         padding: 10px 5px;
         font-size: 12px;
+        width: 93vw;
     }
     body{
         font-size: 13px;
