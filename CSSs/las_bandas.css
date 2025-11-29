@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Dancing+Script:wght@400..700&display=swap');
 
 .bandas{
     display: flex;
@@ -107,21 +108,59 @@
     opacity: 1;
     transition: 0.6s ease;
 }
-@media screen and (max-width: 768px){
+#elvis{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#elvis .bText{
+    right: 2%;
+    width: 25%;
+    font-size: 110%;
+    font-family: dancing script, cursive;
+}
+#elvis .bLogo{
+    left: 28%;
+    width: 28vw;
+    height: auto;
+}
+#elvis .bImg{
+    bottom: 0%;
+    left: -8%;
+    height: auto;
+    width: 33%;
+}
+#elvis:hover .bLogo{
+    left: 33%;
+    transform: scale(0.85);
+}
+#elvis:hover .bImg{
+    left: 8%;
+    transform: scale(1.10);
+}
+#elvis:hover .bLogo, #elvis:hover .bImg, #elvis:hover .bText{
+    opacity: 1;
+    transition: 0.6s ease;
+}
+@media screen and (max-width: 600px){
     .banda{
         height: 140px;
         width: 90vw;
         font-size: 10px;
     }
     .bLogo{
-        left: 28%;
-        width: 40vw;
+        left: 35%;
+        width: 30vw;
     }
     .bText{
         font-size: 9px;
     }
+    .bImg{
+        width: 20vw;
+    }
     #twenty .bLogo{
-        width: 34vw;
+        top: 10%;
+        width: 32vw;
         height: auto;
     }
     #twenty .bText{
@@ -139,6 +178,14 @@
         right: -2%;
     }
     #twenty:hover .bLogo{
-        left: 29%;
+        top: -5%;
+        left: 30%;
+    }
+    #elvis .bLogo{
+        left: 30%;
+        width: 35vw;
+    }
+    #elvis .bImg{
+        width: 23vw;
     }
 }
