@@ -1,13 +1,35 @@
 body{
-    background-color: #6c45a0;
+    background: #000000;
+    transition:linear 5s;
     color: #FFFFFF;
     font-size: 15px;
     font-family: 'Arial Black', Gadget, sans-serif;
     text-align: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.fundo{
+    background: url('../imgs/FRaio.png') repeat center/cover;
+    background-size: 4vw;
+    animation: parallax 9999s linear infinite;
+
+}
+.conteudo{
+    position: relative;
+    top: 1vh;
+    left: 5%;
+    width: 90vw;
+    background-color: #080808fb;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1{
+    -webkit-text-stroke: 1.5px rgb(255, 0, 0);
 }
 button{
-    background-color: #7648b3;
+    background-color: #1f1f1f;
     color: #FFFFFF;
     padding: 8px 16px;
     border: none;
@@ -16,26 +38,31 @@ button{
     font-size: 16px;
 }
 button:hover{
-    background-color: #5e3a85;
+    background-color: #7c7c7c;
     transition: 0.3s;
     transform: scale(1.05);
 }
 button:active{
-    background-color: #2e184b;
+    background-color: #1b1b1b;
     transition: 0.3s;
     transform: scale(0.95);
 }
 header{
     position: relative;
     top: -8px;
-    width: 96vw;
-    background-color: #4b2e70;
+    left: 4%;
+    width: 90vw;
+    background-color: #080808fb;
     border-radius: 0 0 10px 10px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 18px;
+}
+header img{
+    height: auto;
+    width: 13%;
 }
 .Bmenu{
     display: flex;
@@ -44,16 +71,18 @@ header{
 }
 footer{
     position: sticky;
-    width: 96vw;
+    left: 4%;
+    width: 90vw;
     bottom: -2vh;
-    background-color: #4b2e70;
+    background-color: #080808fb;
+    border-radius: 0 0 10px 10px;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: -10px;
     border-radius: 10px 10px 0 0;
 }
 #qea{
-    background-color: #5e3a85;
+    background-color: #7c7c7c85;
     padding: 15px;
     border-radius: 10px;
     margin-top: 20px;
@@ -69,13 +98,19 @@ footer{
         font-size: 13px;
     }
 }
-
 /* Celulares e telas pequenas */
-@media screen and (max-width:540px){
+@media screen and (max-width:720px){
+    .fundo{
+        background-size: 6vw;
+    }
     header{
         padding: 15px 8px;
         gap: 10px;
         flex-direction: column;
+    }
+    header img{
+        width: 30%;
+        margin: -3%;
     }
     footer{
         padding: 12px 8px;
@@ -89,9 +124,8 @@ footer{
         padding: 6px 12px;
     }
 }
-
 /* Celulares muito pequenos */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 540px){
     header{
         padding: 12px 5px;
         gap: 8px;
@@ -112,5 +146,13 @@ footer{
     #qea{
         padding: 10px;
         margin-top: 15px;
+    }
+}
+@keyframes parallax {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -40000vh 40000vw;
     }
 }

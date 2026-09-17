@@ -142,6 +142,54 @@
     opacity: 1;
     transition: 0.6s ease;
 }
+#guns{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-family: 'Almendra SC', serif;
+}
+#guns .bText{
+    left: 5%;
+    width: 30%;
+    font-size: 18px;
+}
+#guns .bLogo{
+    top: 8%;
+    left: 35%;
+}
+#guns .bImg{
+    width: 25vw;
+    height: auto;
+    bottom: 0%;
+    right: 15%;
+    z-index: 2;
+}
+#Prata{
+    z-index: 0;
+}
+#Revolver{
+    z-index: 1;
+}
+#guns:hover{
+    background-color: rgb(15, 15, 15);
+}
+#guns:hover .bImg, #guns:hover .bText{  
+    transform: scale(1.15);
+}
+#guns:hover .bImg{
+    bottom: 5%;
+}
+#guns:hover .bLogo{
+    left: 50%;
+    top: -4%;
+    transform: scale(0.85);
+}
+#guns:hover #Lguns{
+    animation: giro 3s linear 0.5s infinite;
+}
+#guns:hover .bLogo, #guns:hover .bImg, #guns:hover .bText{
+    opacity: 1;
+    transition: 0.6s ease;
+}
 @media screen and (max-width: 720px){
     .banda{
         height: 200px;
@@ -187,6 +235,13 @@
     }
     #elvis .bImg{
         width: 25vw;
+    }
+    #guns:hover .bLogo{
+        left: 55%;
+    }
+    #guns .bText{
+        left: 7%;
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 540px){
@@ -234,5 +289,13 @@
     }
     #elvis .bImg{
         width: 23vw;
+    }
+}
+@keyframes giro {
+    0%{
+        rotate: calc(0deg);
+    }
+    100%{
+        rotate: calc(360deg);
     }
 }

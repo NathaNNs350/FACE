@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(1, 1, 39);
+}
+
+header{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.capa_beatles{
+    width: 500px;
+    height: 500px;
+    animation: 2s linear forwards;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+   
+.capa_beatles:hover{
+    transform: scale(1.05);
+    border: solid 1px white;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.float{
+    float: left;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+    margin-right: 25px;;
+}
+
+.float_inverso{
+    float: right;
+    width: 300px;
+    height: 300px;
+    text-align: justify;
+}
+
+.historia{
+    background-color: rgb(122, 119, 114);
+    padding: 10px;
+}
+
+.foto_historia{
+    margin-left: 8px;
+}
+
+.foto_historia:hover{
+    border: solid black 1px;
+}
+
+.legado{
+    margin-top: 80px;
+    margin-left: 400px;
+}
+
+.foto_legado{
+    transition: 0.4s linear;
+}
+
+.foto_legado:hover{
+    transform: scale(1.05);
+    border: solid 1px white;
+}
+
+.float_legado{
+    float: left;
+    color: white;
+    width: 500px;
+    height: 500px;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.clear{
+    clear: both;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(black,rgb(79, 111, 38));
+    border: 1px solid white;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s linear;
+    margin-left: 680px;
+}
+
+button:hover{
+    color: rgb(79, 111, 38);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 white;
+}
+
+.modal_Beatles{
+    display: none;
+    background-color: black;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.modal_Beatles.abrir{
+    display: flex;
+    flex-direction: column;
+}
+
+audio::-webkit-media-controls-enclosure{
+    background-color: rgb(26, 24, 24);   
+    border: 2px solid rgb(79, 111, 38);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
